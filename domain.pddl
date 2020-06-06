@@ -1,0 +1,35 @@
+(define (domain Tourism)
+(:requirements :typing :fluents)
+(:types node)
+(:predicates
+	(at ?n - node)
+	(haveVisited ?n - node)
+	(notVisited ?n - node)
+)
+(:functions
+    (timeCost)
+    (fun)
+    (travelTime ?n ?n - node)
+    (timeAt ?n)
+    (exp ?n - node)
+    (maxTime)
+)
+
+(:action visit
+	:parameters (?from ?to)
+	:precondition (
+					and (at ?from) 
+					    (haveVisited ?from)
+					    (notVisited ?to)
+						(<= (+ (+ (timeCost) (travelTime ?from ?to)) (timeAt ?to)) (maxTime))
+				)
+	:effect (
+				and (at ?to)
+				    (haveVisited ?to)
+                    (not (notVisited ?to))
+					(not (at ?from))
+					(increase (timeCost) (+ (travelTime ?from ?to) (timeAt ?to)))
+					(increase (fun) (exp ?to))
+			)
+)
+)
