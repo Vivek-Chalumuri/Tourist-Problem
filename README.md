@@ -4,14 +4,7 @@ This project is part of the course DD2380 Artificial Intelligence at KTH. In thi
 
 In this project we consider a traveling tourist, who just arrived in a city.Without loss of generality we assume this city is Stockholm. Our tourist, named Hans, has a budget of time T, which will limit his time to travel in Stockholm. Time (t) for travelling and visiting a place would be subtracted from his budget everytime he visits a place. Based on the popularity of the location evey place has a popularity score (r) given by previous visitors. By staying within the given time budget, we want to maximize his experience score which is the sum of popularity scores of all the places he visits.
 
-### Team Members: 
-
-- Chalumuri, Vivek (vivekc@kth.se)
-- Nuzzo, Francesco (fnuzzo@kth.se)
-- Settelmeier, Jens (jensset@kth.se)
-- Tan, Run Yan (rytan@kth.se)
-
-
+**Team Members**: Chalumuri, Vivek (vivekc@kth.se) | Nuzzo, Francesco (fnuzzo@kth.se) | Settelmeier, Jens (jensset@kth.se) | Tan, Run Yan (rytan@kth.se)
 ## Project Technical Details 
 
 The main file is main.py.
