@@ -48,3 +48,4 @@ LpModelInterface.py formulates and solves the problem in linear programming.
 
 ## Project Conclusions
 
+<img src='imgs/conclusion.png'>
